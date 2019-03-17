@@ -27,6 +27,7 @@ $isPost = $_SERVER["REQUEST_METHOD"]=="POST";
 $isGet = $_SERVER["REQUEST_METHOD"]=="GET";
 
 
+<<<<<<< HEAD
 $isNameError = $isPost && !preg_match('/^[a-z0-9]{2,}$/i',$name);
 $isEmailError = $isPost && !preg_match('/^\w+@[a-zA-Z]+?\.[a-zA-Z]{2,3}$/', $email);
 $isUsernameError = $isPost && !preg_match('/^[a-z0-9]{5,}$/i',$username);
@@ -48,6 +49,30 @@ $isGpaError = $isPost && !preg_match('/^([1-3][.][0-9])|(4[.][0-5])$/',$gpa);
 
 
 $isFormError = $isNameError || $isEmailError || $isUsernameError || $isPasswordError || $isConfpasswordError; 
+=======
+$isNameError = $isPost && !$name;
+$isEmailError = $isPost;
+$isUsernameError = $isPost;
+$isPasswordError = $isPost;
+$isConfpasswordError = $isPost;
+$isDateofbError = $isPost;
+$isGenderError = $isPost;
+$isMaritalError = $isPost;
+$isAddressError = $isPost;
+$isCityError = $isPost;
+$isPostalCodeError = $isPost;
+$isHomePhoneError = $isPost;
+$isMobilePhoneError = $isPost;
+$isCreditCardNumberError = $isPost;
+$isCreditExpError = $isPost;
+$isMSalaryError = $isPost;
+$isUrlError = $isPost;
+$isGpaError = $isPost;
+
+
+$isFormError; 
+
+>>>>>>> 26fa43d2aeb667110a8a4621749e48da08dc2cad
 
 
 
@@ -63,7 +88,11 @@ $isFormError = $isNameError || $isEmailError || $isUsernameError || $isPasswordE
 	</head>
 	
 	<body>
+<<<<<<< HEAD
 	<?php if($isGet || $isFormError) { ?>
+=======
+
+>>>>>>> 26fa43d2aeb667110a8a4621749e48da08dc2cad
 		<h1>Registration Form</h1>
 
 		<p>
@@ -73,6 +102,7 @@ $isFormError = $isNameError || $isEmailError || $isUsernameError || $isPasswordE
 		<hr/>
 		
 		<h2>Please, fill below fields correctly</h2>
+<<<<<<< HEAD
 		<form action="index.php" method = "post">
 		<dl>
 			<dt>Name <span class="error"><?=$isNameError?"Please enter a name":""?></span></dt>
@@ -111,6 +141,46 @@ $isFormError = $isNameError || $isEmailError || $isUsernameError || $isPasswordE
 			<dd><input type="text" name="url" /></dd>
 			<dt>Overall GPA<span class="error"><?=$isGpaError?"Starts from 1.0 to 4.5":""?></span></dt>
 			<dd><input type="text" name="gpa" /></dd>
+=======
+		<form>
+		<dl>
+			<dt>Name <span class="error"></span></dt>
+			<dd><input type="text" name="name" /></dd>
+			<dt>Email<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Username<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Password<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Confirm Password<span></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Date of birth<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Gender<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Marital status<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Address<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>City<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Postal Code<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Home Phone<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Mobile Phone<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Credit Card Number<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Credit Card Expiry Date<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Monthly Salary<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Web Site URL<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+			<dt>Overall GPA<span class="error"></span></dt>
+			<dd><input type="text" /></dd>
+>>>>>>> 26fa43d2aeb667110a8a4621749e48da08dc2cad
 			
 		</dl>
 		
@@ -118,9 +188,12 @@ $isFormError = $isNameError || $isEmailError || $isUsernameError || $isPasswordE
 			 <input type="submit" value="Register">
 		
 		</form>
+<<<<<<< HEAD
 
 	<?php } else { ?>
 		<h1>Thanks for register!</h1>
 		<?php } ?>
+=======
+>>>>>>> 26fa43d2aeb667110a8a4621749e48da08dc2cad
 	</body>
 </html>
