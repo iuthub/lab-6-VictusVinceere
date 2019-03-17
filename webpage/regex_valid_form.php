@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
 			<dd><?=	$match ?></dd>
 
 			<dt>Replaced Text</dt>
-			<dd> <code><?=	$replacedText ?></code></dd>
+			<dd> <code><?= $replacedText ?></code></dd>
 
 			<dt>&nbsp;</dt>
 			<dd><input type="submit" value="Check"></dd>

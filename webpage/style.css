@@ -21,6 +21,10 @@ h1, h2 {
 }
 
 input[type="submit"] {
-    font-size: 2em;
-    width: 100%;
+    font-size: 1.5 em;
+    width: 20%;
+}
+
+.error{
+    color : red;
 }
